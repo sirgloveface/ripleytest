@@ -41,7 +41,7 @@ class App extends Component {
   }
   _onClick = ({x, y, lat, lng, event}) => {
 
-    fetch(`http://localhost:8000/weather/getWeather/${lat},${lng}`)
+    fetch(`https://ripley-test-api.herokuapp.com/weather/getWeather/${lat},${lng}`)
     .then(res => res.json())
     .then((data) => {
       console.log(data)
